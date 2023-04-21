@@ -13,7 +13,6 @@ router.get("/api/ping", (req, res) => {
 
 router.put("/api/basket",urlencoded({extended: false}), Controller.AddToBasketDto);
 
-
 router.get("/api/basket", Controller.BasketDto);
 router.post("/api/basket/checkout", Controller.ProductsAddedToBasketDto);
 router.get("/api/products", Controller.AvailableProductDto);
