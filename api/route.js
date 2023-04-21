@@ -11,7 +11,7 @@ router.get("/api/ping", (req, res) => {
     res.send("PONG");
 });
 
-router.put("/api/basket",bodyParser.urlencoded({extended: false}), Controller.AddToBasketDto);
+router.put("/api/basket",urlencoded({extended: false}), Controller.AddToBasketDto);
 
 
 router.get("/api/basket", Controller.BasketDto);
